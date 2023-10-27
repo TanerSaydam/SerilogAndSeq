@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  serilogandseq:
+    image: ${DOCKER_REGISTRY-}serilogandseq
+    build:
+      context: .
+      dockerfile: SerilogAndSeq/Dockerfile
